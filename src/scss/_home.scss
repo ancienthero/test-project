@@ -1,0 +1,176 @@
+
+/* Home
+   ========================================================================== */
+
+body {
+  background: #eae2d7;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+/* Sections */
+.section-a {
+  @extend %fl-l;
+  width: 640px;
+  margin-right: 20px;
+}
+
+.section-b {
+  @extend %fl-l;
+  width: 300px;
+}
+
+/* Box type a */
+.box-a {
+  @extend %radius-a;
+  @extend %shadow-a;
+  @extend %bfc;
+  background-color: #fff;
+  margin-bottom: 20px;
+  h3 {
+    margin: 18px 20px;
+  }
+}
+
+/*Box type b*/
+.box-b {
+  @extend %radius-a;
+  @extend %shadow-a;
+  @extend %bfc;
+  background: #fff url(../img/common/border_type_b.png) 50% 0 repeat-y;
+  .left, .right {
+    width: 50%;
+    @extend %fl-l;
+  }
+  .left header {
+    @extend %radius-a-top-left;
+  }
+  .right header {
+    @extend %radius-a-top-right;
+  }
+  .right .wrapper {
+    background: url(../img/common/border_type_b.png) 0 0 repeat-y;
+  }
+  header {
+    @extend %gradient-type-a;
+    border-bottom: 2px solid #e5e5e5;
+    .wrapper {
+      @extend %bfc;
+      min-height: 55px;
+    }
+    h3 {
+      margin: 20px;
+    }
+  }
+  .article-box {
+    padding-bottom: 20px;
+  }
+}
+
+/* IE8 fix */
+.oldie .box-b {
+  behavior: url(js/PIE.htc);
+}
+
+.oldie .box-a {
+  behavior: url(js/PIE.htc);
+}
+
+/* Social icons */
+.social-icons {
+  @extend %bfc;
+  list-style-type: none;
+  margin: 20px 0 20px 20px;
+  padding: 0;
+  li {
+    @extend %fl-l;
+  }
+  a {
+    @extend %sprite-social;
+    @extend %font-type-a;
+    display: block;
+    line-height: 22px;
+    margin-right: 17px;
+    padding-left: 28px;
+    text-decoration: none;
+    &.facebook-icon {
+       background-position: 0 0;
+    }
+    &.tweeter-icon {
+      background-position: 0 -40px;
+    }
+    &.gplus-icon {
+      background-position: 0 -80px;
+    }
+  }
+}
+
+/* Links list */
+.links-list {
+  list-style-type: none;
+  margin: 12px 0 14px 20px;
+  padding: 0;
+  li {
+    margin-bottom: 11px;
+  }
+  a {
+    @extend %font-type-a;
+    @extend %sprite-arrows;
+    background-position: 0 3px;
+    text-decoration: none;
+    line-height: 1;
+    padding-left: 25px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Address field */
+.contact-info {
+  @extend %font-type-a;
+  line-height: 1.6;
+  margin: 18px 20px;
+}
+
+
+/* Article */
+.article-a {
+  width: 280px;
+  padding: 20px 20px 0 20px;
+  h4 {
+    margin-top: 0.4em;
+  }
+  p {
+    @extend %font-type-a;
+    line-height: 20/12*1em;
+    margin-top: 0;
+  }
+  .cbox-element {
+    float: left;
+    margin-top: 4px;
+    outline: 0;
+    img {
+      padding: 2px;
+      border: 1px solid #eae1d4;
+    }
+  }
+  .cbox-element+.text-wrapper {
+    margin-left: 120px;
+  }
+  .article-link {
+    @extend %sprite-arrows;
+    font: 12px/12px Arial,sans-serif;
+    color: #e61052;
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 22px;
+    background-position: right -34px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+

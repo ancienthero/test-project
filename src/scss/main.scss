@@ -1,0 +1,21 @@
+/* ==========================================================================
+
+    Project: Test Project
+    Author: Pawel Hajduk
+    Last updated: @@timestamp
+@@toc
+
+   ========================================================================== */
+
+@import "../bower_components/normalize.css/normalize.scss";
+
+/* ==========================================================================
+   Custom Styling
+   ========================================================================== */
+
+@import "variables";
+@import "mixins";
+@import "common";
+@import "colorbox";
+
+@import "home";
